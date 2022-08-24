@@ -1,14 +1,17 @@
 import Slide from "../components/Slide";
-import Detail from "../components/houseDetail";
+import HouseIdea from "../components/houseIdea"
+import Tabs from "../components/Tabs";
 import Location from "../components/Location";
 
 const House = () => {
-    return (
-        <div>
-       <Slide />
-       <Detail />
-      </div>
-    );
-  };
-  
-  export default House;
+  return (
+    <div>
+      <Slide />
+      <HouseIdea />
+      <Tabs />
+      <Location />
+    </div>
+  );
+};
+
+export default House;

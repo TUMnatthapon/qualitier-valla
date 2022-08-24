@@ -1,5 +1,10 @@
 ul,
-li {
+li,
+h1,
+h2,
+h3,
+h4,
+h5 {
   padding-inline-start: 0;
   list-style-type: none;
   margin: 0;
@@ -8,34 +13,84 @@ li {
 
 a {
   text-decoration: none;
-  color:#fff;
+  color: #fff;
 }
 
 .hide-desk {
   display: none;
 }
 
-.title{
+.title {
   margin: 0;
   font-size: 52px;
   color: var(--title-color);
 }
-.subtitle{
+.subtitle {
   margin-top: 5px;
   margin-bottom: 10px;
   font-size: 24px;
   font-weight: 400;
-  color: var(--theme-color)
+  color: var(--theme-color);
 }
 
-.des{
+.des {
   font-size: 20px;
 }
 
-.quality{
+.center {
   text-align: center;
   margin: 25px 0px;
 }
+
+/*----Button----*/
+.btn {
+  font-size: 16px;
+  display: inline-block;
+  padding: 12px 18px;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--theme-color);
+  color: #fff;
+  a {
+    position: relative;
+    &::before {
+      position: absolute;
+      bottom: 0;
+      content: "";
+      height: 0.8px;
+      left: 0;
+      background: #fff;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    &:hover:before {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+/*----*************----*/
+
+/*------ SeeMore -----*/
+.seemore {
+  max-width: 223px;
+  padding: 7px 20px;
+  margin-bottom: 30px;
+  color: var(--theme-color);
+  letter-spacing: 2px;
+  background-color: #fff;
+  border: 4px solid var(--title-color);
+  border-radius: 40px;
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  transition: background-color 0.4s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--theme-color);
+    border: 4px solid #fff;
+  }
+}
+/*----***********----*/
 
 /* Divider */
 hr {
@@ -55,7 +110,7 @@ hr {
 }
 /* --------- */
 
-/* Loading */
+/* ----- Loading ----- */
 .wrapper {
   width: 200px;
   height: 60px;
@@ -69,7 +124,7 @@ hr {
   span {
     position: relative;
     top: 75px;
-    font-family: 'Lato';
+    font-family: "Lato";
     font-size: 20px;
     letter-spacing: 12px;
     color: #d27971;
@@ -85,17 +140,17 @@ hr {
   background-color: #d27971;
   left: 15%;
   transform-origin: 50%;
-  animation: circle .5s alternate infinite ease;
+  animation: circle 0.5s alternate infinite ease;
 
   &:nth-child(2) {
     left: 45%;
-    animation-delay: .2s;
+    animation-delay: 0.2s;
   }
 
   &:nth-child(3) {
     left: auto;
     right: 15%;
-    animation-delay: .3s;
+    animation-delay: 0.3s;
   }
 
   @keyframes circle {
@@ -105,13 +160,13 @@ hr {
       border-radius: 50px 50px 25px 25px;
       transform: scaleX(1.7);
     }
-  
+
     40% {
       height: 20px;
       border-radius: 50%;
       transform: scaleX(1);
     }
-  
+
     100% {
       top: 0%;
     }
@@ -129,7 +184,7 @@ hr {
   z-index: -1;
   left: 15%;
   filter: blur(1px);
-  animation: shadow .5s alternate infinite ease;
+  animation: shadow 0.5s alternate infinite ease;
 
   &:nth-child(4) {
     left: 45%;
@@ -139,22 +194,22 @@ hr {
   &:nth-child(5) {
     left: auto;
     right: 15%;
-    animation-delay: .3s;
+    animation-delay: 0.3s;
   }
 
   @keyframes shadow {
     0% {
       transform: scaleX(1.5);
     }
-  
+
     40% {
       transform: scaleX(1);
-      opacity: .7;
+      opacity: 0.7;
     }
-  
+
     100% {
       transform: scaleX(0.2);
-      opacity: .4;
+      opacity: 0.4;
     }
   }
 }
@@ -162,14 +217,14 @@ hr {
 /* ------------------- */
 
 /* ComingSoon */
-.coming-soon{
+.coming-soon {
   height: 79.5vh;
   position: relative;
   background: url(../public/bg.png) no-repeat center center / cover;
-  
+
   // Dark overlay
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -185,14 +240,13 @@ hr {
     text-align: center;
     color: #fff;
     font-size: 32px;
-    h1,p{
+    h1,
+    p {
       margin: 0;
     }
   }
 }
-
-
-
+/* ------------------- */
 
 @media only screen and (max-width: 1024px) {
   .hide-mobile {
