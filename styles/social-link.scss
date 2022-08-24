@@ -1,0 +1,71 @@
+.social {
+  color: var(--theme-color);
+  width: 200px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 70px;
+  &--wrapper {
+    padding: 8px;
+  }
+  a {
+    overflow: hidden;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
+    text-align: center;
+    color: var(--theme-color);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      transform: rotate(360deg) scale(1);
+      margin: 0px 10px;
+      &.--background-item {
+        background-image: linear-gradient(to right,  #eead9e, #f3b9a7);
+        color: #fff;
+        border: 1px solid rgba(#d27971, 0.7);
+        box-shadow: 0 0 0 4px rgba(#d27971, 0.4);
+      }
+    }
+  }
+  li:nth-child(1) a {
+    animation-delay: 0s;
+  }
+  li:nth-child(2) a {
+    animation-delay: 0.1s;
+  }
+  li:nth-child(3) a {
+    animation-delay: 0.2s;
+  }
+}
+
+.bouncy {
+  animation: bouncy 4s infinite linear;
+  position: relative;
+}
+
+@keyframes bouncy {
+  0% {
+    top: 0em;
+  }
+  40% {
+    top: 0em;
+  }
+  43% {
+    top: -0.9em;
+  }
+  46% {
+    top: 0em;
+  }
+  48% {
+    top: -0.4em;
+  }
+  50% {
+    top: 0em;
+  }
+  100% {
+    top: 0em;
+  }
+}

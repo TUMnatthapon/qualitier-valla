@@ -1,0 +1,20 @@
+@import "./navbar.scss";
+@import "./about.scss";
+@import "./add-on.scss";
+@import "./social-link.scss";
+@import "./location.scss";
+@import "./tabs.scss";
+@import "react-slideshow-image/dist/styles.css";
+@import "react-tabs/style/react-tabs.css";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400&family=Prompt:wght@300&family=Roboto:wght@700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family:'Kanit', 'Prompt', 'Roboto',sans-serif;
+}
