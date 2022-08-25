@@ -89,7 +89,10 @@ const Navbar: NextPage = () => {
           <div
             className="go-to-top"
             onClick={() => {
-              window.scrollTo(0, 0);
+              window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+              });
             }}
           >
             <a className="icon">TOP</a>

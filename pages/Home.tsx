@@ -20,12 +20,14 @@ const Home = () => {
         </div>
       </div>
       <hr />
+      <div className="gap30px" />
       <HouseIdea />
       <div className="houseIdea">
         <Link href="/House">
           <div className="seemore">ดูรายละเอียดโครงการ</div>
         </Link>
       </div>
+      <div className="gap30px" />
       <Location />
     </>
   );

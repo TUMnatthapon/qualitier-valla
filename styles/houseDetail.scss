@@ -1,0 +1,70 @@
+/* Edit Module Tabs */
+.react-tabs {
+  text-align: center;
+  font-size: 18px;
+  margin: 50px 0px;
+  &__tab {
+    margin-top: 20px;
+    padding: 6px 24px !important;
+    border: 1px solid transparent !important;
+    &--selected {
+      background-color: #f1f2f2 !important;
+      border-radius: 24px !important;
+    }
+  }
+  &__tab-list {
+    border-bottom: none !important;
+  }
+}
+/* *********** */
+
+.tab-details {
+  display: flex;
+ /*  justify-content: center; */
+  flex-direction: row;
+  gap: 80px;
+  font-size: 20px;
+  max-width: 940px;
+  margin: auto;
+  margin-top: 50px;
+  .list {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    text-align: left;
+    &--text-wrapper {
+      width: 150px;
+      margin-right: 20px;
+      color: var(--theme-color);
+    }
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    &--title {
+      font-size: 32px;
+    }
+    &--des {
+      font-size: 16px;
+      color: #717171;
+      margin-top: 20px;
+    }
+  }
+  .facility{
+    display: flex;
+    flex-direction: column;
+    img{
+      max-width: 100%;
+    }
+    &.--item{
+      flex-direction: row;
+      flex-wrap: wrap;
+      .area{
+        min-width: 33.33%;
+      }
+    }
+  }
+}

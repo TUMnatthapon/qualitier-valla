@@ -1,12 +1,16 @@
 import HouseIdea from "../components/houseIdea"
-import Tabs from "../components/Tabs";
+import HouseDetail from "../components/houseDetail";
+import HousePlan from "../components/housePlan";
 import Location from "../components/Location";
+import Slide from "../components/Slide"
 
 const House = () => {
   return (
     <div>
+      <Slide />
       <HouseIdea />
-      <Tabs />
+      <HouseDetail />
+      <HousePlan />
       <Location />
     </div>
   );
