@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Social from "./Social";
+import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 
 const Navbar: NextPage = () => {
   const [menu, setMenu] = useState(true);
@@ -21,7 +22,7 @@ const Navbar: NextPage = () => {
     <>
       <div className="logo-top hide-mobile">
         <div style={{ marginLeft: 270 }} />
-        <Link href="/Home">
+        <Link href="/">
           <Image src="/logo-top.svg" alt="Logo-top" width={200} height={85} />
         </Link>
         <Social />
@@ -30,7 +31,9 @@ const Navbar: NextPage = () => {
         <div className="header--container">
           <div className="header--logo">
             <div className="hide-desk" style={{ marginTop: 4 }}>
-              <Image src="/logo.svg" alt="Logo" width={200} height={50} />
+              <Link href="/">
+                <Image src="/logo.svg" alt="Logo" width={200} height={50} />
+              </Link>
             </div>
             <Link href="/">
               {hideIcon ? (
@@ -91,11 +94,11 @@ const Navbar: NextPage = () => {
             onClick={() => {
               window.scrollTo({
                 top: 0,
-                behavior: 'smooth'
+                /* behavior: 'smooth' */
               });
             }}
           >
-            <a className="icon">TOP</a>
+            <a className="icon"><KeyboardDoubleArrowUpIcon /></a>
           </div>
         ) : (
           ""

@@ -2,31 +2,49 @@
 .react-tabs {
   text-align: center;
   font-size: 18px;
-  margin: 50px 0px;
+  padding: 30px 0px;
+  margin: 0 20px;
+  color: var(--dark-gray-color);
+  h2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--theme-color);
+    margin-bottom: 10px;
+  }
   &__tab {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 6px 24px !important;
     border: 1px solid transparent !important;
     &--selected {
-      background-color: #f1f2f2 !important;
+      background: #f1f2f2 !important;
       border-radius: 24px !important;
+    }
+    &:focus {
+      outline: none;
+      &:after {
+        display: none;
+      }
     }
   }
   &__tab-list {
     border-bottom: none !important;
+    margin: 0px;
   }
 }
 /* *********** */
 
 .tab-details {
   display: flex;
- /*  justify-content: center; */
+  /*  justify-content: center; */
   flex-direction: row;
   gap: 80px;
-  font-size: 20px;
+  font-size: 18px;
   max-width: 940px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 40px;
+  &.--reverse {
+    flex-direction: row-reverse;
+  }
   .list {
     display: flex;
     flex-direction: row;
@@ -49,21 +67,57 @@
     }
     &--des {
       font-size: 16px;
-      color: #717171;
-      margin-top: 20px;
+      color: var(--gray-color);
+      margin-top: 2px;
     }
   }
-  .facility{
+  .facility {
     display: flex;
     flex-direction: column;
-    img{
-      max-width: 100%;
-    }
-    &.--item{
+    color: var(--gray-color);
+    font-size: 17px;
+    &.--item {
       flex-direction: row;
       flex-wrap: wrap;
-      .area{
-        min-width: 33.33%;
+    }
+    &.--area {
+      flex-direction: row;
+      min-width: 33.33%;
+      text-align: start;
+      padding: 5px 0px;
+      span {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  /* Edit Module Tabs */
+  .react-tabs h2 {
+    font-size: 28px;
+  }
+  /* *********** */
+
+  .tab-details {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    &.--reverse {
+      flex-direction: column;
+    }
+    img {
+      max-width: 100%;
+    }
+    .facility {
+      font-size: 17px;
+      &.--area {
+        min-width: 100%;
+        span {
+          margin-left: 15px;
+        }
       }
     }
   }

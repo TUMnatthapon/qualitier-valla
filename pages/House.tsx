@@ -1,8 +1,9 @@
-import HouseIdea from "../components/houseIdea"
+
+import Slide from "../components/Slide";
+import HouseIdea from "../components/houseIdea";
 import HouseDetail from "../components/houseDetail";
 import HousePlan from "../components/housePlan";
 import Location from "../components/Location";
-import Slide from "../components/Slide"
 
 const House = () => {
   return (

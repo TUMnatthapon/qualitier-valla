@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <Slide />
-      <div className="center">
+      <div className="qualitier">
         <h1 className="title">ควอลิเทีย Quality Living</h1>
         <h2 className="subtitle">
           เมื่อความหวังและความสุขมาบรรจบกัน
