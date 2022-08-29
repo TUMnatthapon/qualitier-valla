@@ -1,5 +1,5 @@
-
 import Slide from "../components/Slide";
+/* import Form from "../components/Form"; */
 import HouseIdea from "../components/houseIdea";
 import HouseDetail from "../components/houseDetail";
 import HousePlan from "../components/housePlan";
@@ -9,6 +9,7 @@ const House = () => {
   return (
     <div>
       <Slide />
+      {/* <Form /> */}
       <HouseIdea />
       <HouseDetail />
       <HousePlan />

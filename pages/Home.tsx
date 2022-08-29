@@ -8,19 +8,18 @@ const Home = () => {
     <>
       <Slide />
       <div className="qualitier">
-        <h1 className="title">ควอลิเทีย Quality Living</h1>
-        <h2 className="subtitle">
+        <h1 className="qualitier--title">ควอลิเทีย Quality Living</h1>
+        <h2 className="qualitier--subtitle">
           เมื่อความหวังและความสุขมาบรรจบกัน
           พื้นที่ที่พร้อมให้คุณมีความสุขกับการใช้ชีวิต
         </h2>
-        <div className="des">
+        <div className="qualitier--des">
           สถานที่แห่งความหวังและความสุข ที่จะช่วยสร้างคุณภาพชีวิตเพื่อให้บ้าน
           “เป็นบ้านที่สมบูรณ์”
           <div>#Qualitier #QualitierQualityLife #Qualityhouse</div>
         </div>
       </div>
       <hr />
-      <div className="gap30px" />
       <HouseIdea />
       <div className="houseIdea">
         <Link href="/House">

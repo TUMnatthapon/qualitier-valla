@@ -35,28 +35,6 @@ a {
   padding-top: 30px;
 }
 
-.qualitier {
-  text-align: center;
-  margin: 25px 20px;
-}
-
-.title {
-  margin: 0;
-  font-size: 52px;
-  color: var(--title-color);
-}
-.subtitle {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  font-size: 24px;
-  font-weight: 400;
-  color: var(--theme-color);
-}
-
-.des {
-  font-size: 20px;
-}
-
 /*----Button----*/
 .btn {
   font-size: 16px;
@@ -113,7 +91,7 @@ hr {
   width: 25%;
   height: 1px;
   border: none;
-  margin: auto;
+  margin: 30px auto;
   position: relative;
 }
 /* ----------- */
@@ -273,27 +251,13 @@ hr {
   .hide-desk {
     display: block;
   }
-  .qualitier {
-    text-align: left;
+  .gap30px {
+    padding-top: 10px;
   }
-  .title {
-    font-size: 32px;
-  }
-  .subtitle {
-    font-size: 24px;
-  }
-  .des{
-    font-size: 18px;
-  }
-}
 
-.gap30px {
-  padding-top: 10px;
+  /* Divider */
+  hr {
+    width: 50%;
+  }
+  /* ----------- */
 }
-
-/* Divider */
-hr {
-  width: 50%;
-  margin: 30px auto;
-}
-/* ----------- */
