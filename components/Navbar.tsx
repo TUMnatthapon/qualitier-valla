@@ -30,14 +30,18 @@ const Navbar: NextPage = () => {
       <div className="header">
         <div className="header--container">
           <div className="header--logo">
-            <div className="hide-desk" style={{ marginTop: 4 }}>
-              <Link href="/">
-                <Image src="/logo.svg" alt="Logo" width={200} height={50} />
-              </Link>
-            </div>
+            <Link href="/">
+              {!hideIcon ? (
+                <div /* className="hide-mobile" */>
+                  <Image src="/logo.svg" alt="Logo" width={200} height={50} />
+                </div>
+              ) : (
+                <div style={{ width: 200 }} />
+              )}
+            </Link>
             <Link href="/">
               {hideIcon ? (
-                <div className="hide-mobile">
+                <div /* className="hide-mobile" */>
                   <Image src="/logo.svg" alt="Logo" width={200} height={50} />
                 </div>
               ) : (
@@ -45,24 +49,24 @@ const Navbar: NextPage = () => {
               )}
             </Link>
           </div>
-            <ul className={menu ? "menu" : "menu --active"}>
-              <li onClick={() => setMenu(!menu)}>
-                <Link href="/">หน้าหลัก</Link>
-              </li>
-              <li onClick={() => setMenu(!menu)}>
-                <Link href="/House">บ้าน</Link>
-              </li>
-              <li onClick={() => setMenu(!menu)}>
-                <Link href="/Service">บริการ</Link>
-              </li>
-              <li onClick={() => setMenu(!menu)}>
-                <Link href="/Promotion">โปรโมชั่น</Link>
-              </li>
-              <li onClick={() => setMenu(!menu)}>
-                <Link href="/About">เกี่ยวกับเรา</Link>
-              </li>
-              <div className="a" ></div>
-            </ul>
+          <ul className={menu ? "menu" : "menu --active"}>
+            <li onClick={() => setMenu(!menu)}>
+              <Link href="/">หน้าหลัก</Link>
+            </li>
+            <li onClick={() => setMenu(!menu)}>
+              <Link href="/House">บ้าน</Link>
+            </li>
+            <li onClick={() => setMenu(!menu)}>
+              <Link href="/Service">บริการ</Link>
+            </li>
+            <li onClick={() => setMenu(!menu)}>
+              <Link href="/Promotion">โปรโมชั่น</Link>
+            </li>
+            <li onClick={() => setMenu(!menu)}>
+              <Link href="/About">เกี่ยวกับเรา</Link>
+            </li>
+            <div className="a"></div>
+          </ul>
           {hideIcon ? (
             <div className="hide-mobile">
               <Social />
