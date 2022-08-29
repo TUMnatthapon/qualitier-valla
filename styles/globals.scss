@@ -9,7 +9,7 @@
 @import "./housePlan.scss";
 @import "react-slideshow-image/dist/styles.css";
 @import "react-tabs/style/react-tabs.css";
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400&family=Prompt:wght@300&family=Roboto:wght@700&display=swap');
+@import "@fontsource/kanit";
 
 html,
 body {
@@ -19,5 +19,5 @@ body {
 }
 *{
   box-sizing: border-box;
-  font-family:'Kanit', 'Prompt', 'Roboto',sans-serif;
+  font-family:'Kanit';
 }
