@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Social from "./Social";
-import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
+import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
 
 const Navbar: NextPage = () => {
   const [menu, setMenu] = useState(true);
@@ -45,24 +45,24 @@ const Navbar: NextPage = () => {
               )}
             </Link>
           </div>
-          <ul className={menu ? "menu" : "menu --active"}>
-            <li onClick={() => setMenu(!menu)}>
-              <Link href="/">หน้าหลัก</Link>
-            </li>
-            <li onClick={() => setMenu(!menu)}>
-              <Link href="/House">บ้าน</Link>
-            </li>
-            <li onClick={() => setMenu(!menu)}>
-              <Link href="/Service">บริการ</Link>
-            </li>
-            <li onClick={() => setMenu(!menu)}>
-              <Link href="/Promotion">โปรโมชั่น</Link>
-            </li>
-            <li onClick={() => setMenu(!menu)}>
-              <Link href="/About">เกี่ยวกับเรา</Link>
-            </li>
-          </ul>
-
+            <ul className={menu ? "menu" : "menu --active"}>
+              <li onClick={() => setMenu(!menu)}>
+                <Link href="/">หน้าหลัก</Link>
+              </li>
+              <li onClick={() => setMenu(!menu)}>
+                <Link href="/House">บ้าน</Link>
+              </li>
+              <li onClick={() => setMenu(!menu)}>
+                <Link href="/Service">บริการ</Link>
+              </li>
+              <li onClick={() => setMenu(!menu)}>
+                <Link href="/Promotion">โปรโมชั่น</Link>
+              </li>
+              <li onClick={() => setMenu(!menu)}>
+                <Link href="/About">เกี่ยวกับเรา</Link>
+              </li>
+              <div className="a" ></div>
+            </ul>
           {hideIcon ? (
             <div className="hide-mobile">
               <Social />
@@ -98,7 +98,9 @@ const Navbar: NextPage = () => {
               });
             }}
           >
-            <a className="icon"><KeyboardDoubleArrowUpIcon /></a>
+            <a className="icon">
+              <KeyboardDoubleArrowUpIcon />
+            </a>
           </div>
         ) : (
           ""
