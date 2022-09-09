@@ -1,12 +1,18 @@
 import Link from "next/link";
-import Slide from "../components/Slide";
+import Image from "next/image";
 import HouseIdea from "../components/houseIdea";
 import Location from "../components/Location";
 
 const Home = () => {
   return (
     <>
-      <Slide />
+      <Image
+        src="https://firebasestorage.googleapis.com/v0/b/qualitier-valla.appspot.com/o/Qualitier-1.jpg?alt=media&token=4a47feb2-b08b-4953-9597-a2277902debf"
+        alt="Slide Image"
+        width="100%"
+        height="47%"
+        layout="responsive"
+      />
       <div className="qualitier">
         <h1 className="qualitier--title">ควอลิเทีย Quality Living</h1>
         <h2 className="qualitier--subtitle">

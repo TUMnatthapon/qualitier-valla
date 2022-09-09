@@ -31,21 +31,17 @@ const Navbar: NextPage = () => {
         <div className="header--container">
           <div className="header--logo">
             <Link href="/">
-              {!hideIcon ? (
-                <div /* className="hide-mobile" */>
-                  <Image src="/logo.svg" alt="Logo" width={200} height={50} />
-                </div>
-              ) : (
-                <div style={{ width: 200 }} />
-              )}
-            </Link>
-            <Link href="/">
               {hideIcon ? (
-                <div /* className="hide-mobile" */>
+                <div>
                   <Image src="/logo.svg" alt="Logo" width={200} height={50} />
                 </div>
               ) : (
-                <div style={{ width: 200 }} />
+                <>
+                  <div style={{ width: 200 }} />
+                  <div className="hide-desk">
+                    <Image src="/logo.svg" alt="Logo" width={200} height={50} />
+                  </div>
+                </>
               )}
             </Link>
           </div>

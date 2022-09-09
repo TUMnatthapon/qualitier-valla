@@ -51,7 +51,7 @@
     margin-bottom: 20px;
     text-align: left;
     &--text-wrapper {
-      width: 150px;
+      min-width: 150px;
       margin-right: 20px;
       color: var(--theme-color);
     }
@@ -101,6 +101,11 @@
     gap: 30px;
     img {
       max-width: 100%;
+    }
+    .list {
+      &--text-wrapper {
+        min-width: 140px;
+      }
     }
     .info {
       max-width: 45%;

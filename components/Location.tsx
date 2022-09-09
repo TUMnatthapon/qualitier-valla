@@ -72,7 +72,7 @@ const Location = () => {
             </Link>
           </div>
           <div className="btn btn-map">
-            <Link href="https://www.google.com/maps/dir//18.8864444,99.0174722/@18.8864495,99.0152835,17z">
+            <Link href="https://www.google.com/maps/dir/7.9085109,98.3417014/18.8864444,99.0174722/@13.3697984,94.9367647,6z/data=!3m1!4b1">
               <a target="_blank">ขอเส้นทาง</a>
             </Link>
           </div>

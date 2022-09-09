@@ -28,36 +28,36 @@ const HouseDetail = () => {
           </div>
           <div>
             <div className="list">
-              <div className="list--text-wrapper">พื้นที่โครงการ </div>
-              <div>xx ไร่</div>
+              <div className="list--text-wrapper">ชื่อโครงการ </div>
+              <div>ควอลิเทียร์ Qualitier</div>
+            </div>
+            <div className="list">
+              <div className="list--text-wrapper">รูปแบบโครงการ</div>
+              <div>บ้านเดี่ยว Luxury</div>
+            </div>
+            <div className="list">
+              <div className="list--text-wrapper">ที่ตั้งโครงการ</div>
+              <div>ตำบลป่าไผ่ อำเภอสันทราย จังหวัดเชียงใหม่ 50210</div>
+            </div>
+            <div className="list">
+              <div className="list--text-wrapper">พื้นที่โครงการ</div>
+              <div>4 ไร่ 1 งาน 64 ตารางวา</div>
+            </div>
+            <div className="list">
+              <div className="list--text-wrapper">จำนวนยูนิต</div>
+              <div>24 ยูนิต</div>
+            </div>
+            <div className="list">
+              <div className="list--text-wrapper">ขนาดที่ดิน</div>
+              <div>เริ่มต้น 50 ตารางวา</div>
+            </div>
+            <div className="list">
+              <div className="list--text-wrapper">พื้นที่ใช้สอย</div>
+              <div>199.69 ตารางเมตร</div>
             </div>
             <div className="list">
               <div className="list--text-wrapper">ราคาเริ่มต้น</div>
-              <div>x.xx ล้านบาท</div>
-            </div>
-            <div className="list">
-              <div className="list--text-wrapper">พื้นที่ใช้สอย </div>
-              <div>xx - xx ตร.ม</div>
-            </div>
-            <div className="list">
-              <div className="list--text-wrapper">ประเภทโครงการ</div>
-              <div>บ้านเดี่ยว</div>
-            </div>
-            <div className="list">
-              <div className="list--text-wrapper">ประเภทยูนิต</div>
-              <div>x - x ห้องนอน</div>
-            </div>
-            <div className="list">
-              <div className="list--text-wrapper">จำนวนที่อยู่อาศัย</div>
-              <div>xxx ยูนิต</div>
-            </div>
-            <div className="list">
-              <div className="list--text-wrapper">จำนวนร้านค้า </div>
-              <div>xx ยูนิต</div>
-            </div>
-            <div className="list">
-              <div className="list--text-wrapper">จำนวนที่จอดรถ</div>{" "}
-              <div>xx %</div>
+              <div>3.9 ล้านบาท</div>
             </div>
           </div>
         </div>
