@@ -10,7 +10,7 @@ const Home = () => {
         src="https://firebasestorage.googleapis.com/v0/b/qualitier-valla.appspot.com/o/Qualitier-1.jpg?alt=media&token=4a47feb2-b08b-4953-9597-a2277902debf"
         alt="Slide Image"
         width="100%"
-        height="47%"
+        height="45%"
         layout="responsive"
       />
       <div className="qualitier">
@@ -32,7 +32,6 @@ const Home = () => {
           <div className="seemore">ดูรายละเอียดโครงการ</div>
         </Link>
       </div>
-      <div className="gap30px" />
       <Location />
     </>
   );

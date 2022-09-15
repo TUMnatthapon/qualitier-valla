@@ -1,15 +1,42 @@
 .plan {
-  background-color: #fff;
-  background-image: linear-gradient(#f1f2f2,#fff);
-  .react-tabs__tab--selected{
+  background-color: #f1f2f2;
+  background-image: linear-gradient(#f1f2f2, #fff);
+  .react-tabs__tab--selected {
     background-color: #d8dbdb !important;
   }
-  &--area{
+  &--area {
     max-width: 940px;
     margin: auto;
     margin-top: 30px;
-    img{
+    color: var(--gray-color);
+    font-size: 17px;
+    img {
       max-width: 100%;
     }
+  }
+  .des {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &.--area {
+      min-width: 25%;
+      padding: 5px 0px;
+      span {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .plan .des.--area {
+    min-width: 33.33%;
+    span {
+      margin-left: 15px;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .plan .des.--area {
+    min-width:100%;
   }
 }
