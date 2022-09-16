@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Slide from "../components/Slide";
+
 import ComingSoon from "../components/ComingSoon";
 
 const About = () => {
