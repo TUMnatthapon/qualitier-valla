@@ -5,6 +5,7 @@
   margin: 25px auto;
   text-align: center;
   max-width: 940px;
+  color: var(--gray-color);
   &--title {
     font-size: 52px;
     color: var(--title-color);
@@ -19,6 +20,10 @@
 
   &--des {
     font-size: 20px;
+  }
+  &.--img-wrapper{
+    flex-direction: row;
+    margin-bottom: 0px;
   }
 }
 
@@ -35,6 +40,9 @@
     }
     &--des {
       font-size: 18px;
+    }
+    &.--img-wrapper{
+      flex-direction: column;
     }
   }
 }

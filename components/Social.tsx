@@ -11,7 +11,7 @@ const Social = () => {
       </li>
 
       <li className="social--wrapper">
-        <a href="https://www.m.me/102925705865264" target="_blank" rel="noopener noreferrer" className="bouncy --background-item ">
+        <a href="https://www.m.me/qualitierlife" target="_blank" rel="noopener noreferrer" className="bouncy --background-item ">
           <FontAwesomeIcon icon={faFacebookMessenger} />
         </a>
       </li>

@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <Image
-        src="https://firebasestorage.googleapis.com/v0/b/qualitier-valla.appspot.com/o/Qualitier-1.jpg?alt=media&token=4a47feb2-b08b-4953-9597-a2277902debf"
+        src="/img-title1-desk.png"
         alt="Slide Image"
         width="100%"
         height="45%"
@@ -23,6 +23,10 @@ const Home = () => {
           สถานที่แห่งความหวังและความสุข ที่จะช่วยสร้างคุณภาพชีวิตเพื่อให้บ้าน
           “เป็นบ้านที่สมบูรณ์”
           <div>#Qualitier #QualitierQualityLife #Qualityhouse</div>
+        </div>
+        <div className="qualitier --img-wrapper hide-mobile">
+          <Image src="/img-detail2.png" alt="Image" width="500" height="300" />
+          <Image src="/house.jpg" alt="Image" width="500" height="300" />
         </div>
       </div>
       <hr />

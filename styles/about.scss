@@ -8,39 +8,3 @@
   height: 100px;
   color: var(--theme-color);
 }
-.about {
-  display: flex;
-  flex-direction: column;
-
-  /* Concept */
-  .concept {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 40px 200px;
-    gap: 60px;
-    background-image: linear-gradient(to right, #d27971, #eead9e, #f3b9a7);
-    &--idea {
-      display: flex;
-      flex-direction: row;
-      text-align: center;
-      padding-top: 18px;
-      p {
-        margin: 0;
-        font-size: 15px;
-        width: 150px;
-      }
-    }
-    &--description {
-      h3 {
-        margin-top: 30px;
-        margin-bottom: 8px;
-      }
-      p {
-        margin: 0;
-        font-size: 18px;
-      }
-    }
-  }
-  /* Concept */
-}

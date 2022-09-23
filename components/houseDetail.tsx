@@ -66,7 +66,7 @@ const HouseDetail = () => {
         <div>
           <div className="tab-details --reverse">
             <div>
-              <img src="/img-detail2.png" alt="Picture" width="520" />
+              <img src="/house.jpg" alt="Picture" width="520" />
             </div>
             <div className="info">
               <MapsHomeWorkTwoToneIcon className="icon-material --size" />

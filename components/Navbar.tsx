@@ -36,12 +36,11 @@ const Navbar: NextPage = () => {
                   <Image src="/logo.svg" alt="Logo" width={200} height={50} />
                 </div>
               ) : (
-                <>
-                  <div style={{ width: 200 }} />
+                <div style={{ width: 200 }}>
                   <div className="hide-desk">
                     <Image src="/logo.svg" alt="Logo" width={200} height={50} />
                   </div>
-                </>
+                </div>
               )}
             </Link>
           </div>
@@ -61,7 +60,6 @@ const Navbar: NextPage = () => {
             <li onClick={() => setMenu(!menu)}>
               <Link href="/About">เกี่ยวกับเรา</Link>
             </li>
-            <div className="a"></div>
           </ul>
           {hideIcon ? (
             <div className="hide-mobile">
