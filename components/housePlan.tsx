@@ -24,7 +24,8 @@ const housePlan = () => {
         </TabPanel>
         <TabPanel>
           <div className="plan--area">
-            <img src="/floor-plan-1.jpg" alt="Picture" />
+            <img src="/floor-plan-1.jpg" alt="Plan1" />
+            <img src="/floor-plan-2.jpg" alt="Plan2" />
           </div>
           <div className="plan--area">
             <div className="des">
