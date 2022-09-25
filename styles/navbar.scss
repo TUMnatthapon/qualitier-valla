@@ -4,6 +4,19 @@
   --gray-color:#717171;
   --title-color:#eead9e;
 }
+.call{
+  width: 200px;
+  color: var(--theme-color);
+  font-size: 20px;
+  a{
+    color: var(--dark-gray-color);
+    font-size: 17px;
+    padding-left: 8px;
+    &:hover{
+      color: var(--theme-color);
+    }
+  }
+}
 .logo-top {
   display: flex;
   justify-content: space-between;

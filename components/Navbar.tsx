@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Social from "./Social";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
 
 const Navbar: NextPage = () => {
@@ -21,7 +23,12 @@ const Navbar: NextPage = () => {
   return (
     <>
       <div className="logo-top hide-mobile">
-        <div style={{ marginLeft: 270 }} />
+        <div style={{ marginLeft: 70 }}>
+          <div className="call">
+            <FontAwesomeIcon icon={faPhone} />
+            <a href="tel:063-007-5618">063-007-5618</a>
+          </div>
+        </div>
         <Link href="/">
           <Image src="/logo-top.svg" alt="Logo-top" width={200} height={85} />
         </Link>
