@@ -3,7 +3,7 @@
   justify-content: space-around;
   background-color: var(--theme-color);
   color: white;
-  padding: 0 50px 15px 50px;
+  padding: 20px 50px 15px 50px;
   font-size: 17px;
 
   .area-block {
@@ -12,7 +12,7 @@
 
   .font-title {
     font-size: 25px;
-    margin: 25px 0px 10px 0px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     &--wrapper {
       margin: 10px;
@@ -74,7 +74,7 @@
 @media only screen and (max-width: 767px) {
   .footer {
     flex-direction: column;
-    padding: 0 25px 15px 25px;
+    padding: 15px 25px 15px 25px;
     ul li {
       min-width: 25%;
       a span {
@@ -84,9 +84,13 @@
     .area-block {
       max-width: 100%;
     }
+    .font-title {
+      font-size: 25px;
+    }
     .wrapper-links {
       flex-direction: column;
       flex-wrap: nowrap;
+      font-size: 15px;
       &.--item {
         flex-direction: row;
       }
