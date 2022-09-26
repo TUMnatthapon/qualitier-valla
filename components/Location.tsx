@@ -78,7 +78,7 @@ const Location = () => {
           </div>
         </div>
         <iframe
-          style={{ border: 0 }}
+          style={{ border: 0, marginBottom:-8 }}
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2196.5394005014023!2d99.0166202032996!3d18.88641906000045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6153af36b873bec6!2zMTjCsDUzJzExLjIiTiA5OcKwMDEnMDIuOSJF!5e0!3m2!1sth!2sth!4v1661754650955!5m2!1sth!2sth"
           width="100%"
           height="400"
